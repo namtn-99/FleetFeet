@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-ExtraBold.ttf">
+            <string>Gilroy-ExtraBold</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Popup View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PopupViewController" customModule="FleetFeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuR-5E-3h3">
+                                <rect key="frame" x="133.33333333333334" y="91" width="126.33333333333334" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iLc-8t-tF6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKn-Mo-9zT">
+                                <rect key="frame" x="32" y="371.66666666666669" width="329" height="109"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to clear the game data?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeX-a4-55f">
+                                        <rect key="frame" x="8" y="16" width="313" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PeX-a4-55f" firstAttribute="leading" secondItem="NKn-Mo-9zT" secondAttribute="leading" constant="8" id="1VR-2f-Nkh"/>
+                                    <constraint firstAttribute="bottom" secondItem="PeX-a4-55f" secondAttribute="bottom" constant="50" id="3wc-a4-n3Q"/>
+                                    <constraint firstItem="PeX-a4-55f" firstAttribute="top" secondItem="NKn-Mo-9zT" secondAttribute="top" constant="16" id="RZr-UM-kCz"/>
+                                    <constraint firstAttribute="trailing" secondItem="PeX-a4-55f" secondAttribute="trailing" constant="8" id="VyH-04-25t"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="rUf-AE-A7Q">
+                                <rect key="frame" x="104" y="460.66666666666669" width="185" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-aH-GnY">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="46"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0039215686269999999" green="0.35294117650000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wag-2N-Rvs">
+                                        <rect key="frame" x="113" y="0.0" width="72" height="46"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0039215686269999999" green="0.35294117650000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleSecondButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3PK-We-TMl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rUf-AE-A7Q" firstAttribute="top" secondItem="NKn-Mo-9zT" secondAttribute="bottom" constant="-20" id="Pgr-5F-PQ9"/>
+                            <constraint firstItem="NKn-Mo-9zT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Q8e-U3-qbr"/>
+                            <constraint firstItem="WuR-5E-3h3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nkY-c6-C4Z"/>
+                            <constraint firstItem="NKn-Mo-9zT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="qSs-KU-g24"/>
+                            <constraint firstItem="NKn-Mo-9zT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="tse-nc-vzf"/>
+                            <constraint firstItem="WuR-5E-3h3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="vT2-PF-bu6"/>
+                            <constraint firstItem="rUf-AE-A7Q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="yGC-0n-lvB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="PeX-a4-55f" id="SRD-Lx-GtA"/>
+                        <outlet property="layerView" destination="NKn-Mo-9zT" id="d7t-cj-htc"/>
+                        <outlet property="primaryButton" destination="UXZ-aH-GnY" id="VxT-4J-hdc"/>
+                        <outlet property="secondButton" destination="Wag-2N-Rvs" id="VEb-cQ-0Sb"/>
+                        <outlet property="titleLabel" destination="WuR-5E-3h3" id="yUz-yQ-zNI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-6.3380281690140849"/>
+        </scene>
+    </scenes>
+</document>
