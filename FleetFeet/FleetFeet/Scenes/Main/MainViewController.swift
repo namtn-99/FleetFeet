@@ -24,7 +24,8 @@ final class MainViewController: UIViewController {
     @IBAction func handleMenuButton(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            print("To Game")
+            let vc = GameViewController.instantiate()
+            navigationController?.pushViewController(vc, animated: true)
         case 1:
             let vc = GuideViewController.instantiate()
             navigationController?.pushViewController(vc, animated: true)

@@ -20,7 +20,6 @@
 		4929F6FC2BECA4BD004F62C0 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929F6FB2BECA4BD004F62C0 /* UIColor+.swift */; };
 		4929F6FE2BECA4D1004F62C0 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929F6FD2BECA4D1004F62C0 /* UIView+.swift */; };
 		4929F7012BECA541004F62C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929F7002BECA541004F62C0 /* Constants.swift */; };
-		496818FD2BECAB240011CDF6 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 496818FC2BECAB240011CDF6 /* Gilroy-Regular.ttf */; };
 		496819002BECABA30011CDF6 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496818FF2BECABA30011CDF6 /* GuideViewController.swift */; };
 		496819022BECABAF0011CDF6 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496819012BECABAF0011CDF6 /* Guide.storyboard */; };
 		496819042BECABFB0011CDF6 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496819032BECABFB0011CDF6 /* Reusable.swift */; };
@@ -28,6 +27,12 @@
 		496819092BECBEAB0011CDF6 /* Options.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496819082BECBEAB0011CDF6 /* Options.storyboard */; };
 		4968ACE82BECCD8B00F49F65 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968ACE72BECCD8B00F49F65 /* PopupViewController.swift */; };
 		4968ACEA2BECCD9400F49F65 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4968ACE92BECCD9400F49F65 /* Popup.storyboard */; };
+		CE5FC7C62BEF567B004210EB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7C52BEF567B004210EB /* GameViewController.swift */; };
+		CE5FC7CA2BEF5890004210EB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7C92BEF5890004210EB /* GameScene.swift */; };
+		CE5FC7CC2BEF5CFC004210EB /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5FC7CB2BEF5CFC004210EB /* Game.storyboard */; };
+		CE5FC7CF2BEF6698004210EB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE5FC7CE2BEF6698004210EB /* GameScene.sks */; };
+		CEC9F6932BF0CA0A00F404B3 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9F6922BF0CA0A00F404B3 /* ChallengesViewController.swift */; };
+		CEC9F6952BF0CA1300F404B3 /* Challenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC9F6942BF0CA1300F404B3 /* Challenges.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +51,6 @@
 		4929F6FB2BECA4BD004F62C0 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		4929F6FD2BECA4D1004F62C0 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		4929F7002BECA541004F62C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		496818FC2BECAB240011CDF6 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		496818FF2BECABA30011CDF6 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		496819012BECABAF0011CDF6 /* Guide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
 		496819032BECABFB0011CDF6 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
@@ -54,6 +58,12 @@
 		496819082BECBEAB0011CDF6 /* Options.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Options.storyboard; sourceTree = "<group>"; };
 		4968ACE72BECCD8B00F49F65 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		4968ACE92BECCD9400F49F65 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		CE5FC7C52BEF567B004210EB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CE5FC7C92BEF5890004210EB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CE5FC7CB2BEF5CFC004210EB /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		CE5FC7CE2BEF6698004210EB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CEC9F6922BF0CA0A00F404B3 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		CEC9F6942BF0CA1300F404B3 /* Challenges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenges.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +124,6 @@
 				4929F6F22BEC85CE004F62C0 /* Gilroy-RegularItalic.ttf */,
 				4929F6F32BEC85CE004F62C0 /* Gilroy-SemiBold.ttf */,
 				4929F6F02BEC85CE004F62C0 /* Gilroy-SemiBoldItalic.ttf */,
-				496818FC2BECAB240011CDF6 /* Gilroy-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 		4929F6F82BEC9FDE004F62C0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CEC9F6912BF0C9ED00F404B3 /* Challenges */,
+				CE5FC7C42BEF5672004210EB /* Game */,
 				4968ACE62BECCD6500F49F65 /* Popup */,
 				496819052BECBE7E0011CDF6 /* Options */,
 				496818FE2BECAB8F0011CDF6 /* Guide */,
@@ -182,6 +193,26 @@
 				4968ACE92BECCD9400F49F65 /* Popup.storyboard */,
 			);
 			path = Popup;
+			sourceTree = "<group>";
+		};
+		CE5FC7C42BEF5672004210EB /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				CE5FC7CE2BEF6698004210EB /* GameScene.sks */,
+				CE5FC7C92BEF5890004210EB /* GameScene.swift */,
+				CE5FC7C52BEF567B004210EB /* GameViewController.swift */,
+				CE5FC7CB2BEF5CFC004210EB /* Game.storyboard */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		CEC9F6912BF0C9ED00F404B3 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9F6922BF0CA0A00F404B3 /* ChallengesViewController.swift */,
+				CEC9F6942BF0CA1300F404B3 /* Challenges.storyboard */,
+			);
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,12 +277,14 @@
 				496819092BECBEAB0011CDF6 /* Options.storyboard in Resources */,
 				4929F6F42BEC85CE004F62C0 /* Gilroy-SemiBoldItalic.ttf in Resources */,
 				4929F6F52BEC85CE004F62C0 /* Gilroy-ExtraBold.ttf in Resources */,
-				496818FD2BECAB240011CDF6 /* Gilroy-Regular.ttf in Resources */,
+				CE5FC7CF2BEF6698004210EB /* GameScene.sks in Resources */,
+				CEC9F6952BF0CA1300F404B3 /* Challenges.storyboard in Resources */,
 				4929F6F62BEC85CE004F62C0 /* Gilroy-RegularItalic.ttf in Resources */,
 				4929F6F72BEC85CE004F62C0 /* Gilroy-SemiBold.ttf in Resources */,
 				4968ACEA2BECCD9400F49F65 /* Popup.storyboard in Resources */,
 				4929F6E72BEC716A004F62C0 /* Base in Resources */,
 				4929F6E22BEC7169004F62C0 /* Base in Resources */,
+				CE5FC7CC2BEF5CFC004210EB /* Game.storyboard in Resources */,
 				496819022BECABAF0011CDF6 /* Guide.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +302,12 @@
 				496819072BECBEA20011CDF6 /* OptionsViewController.swift in Sources */,
 				496819002BECABA30011CDF6 /* GuideViewController.swift in Sources */,
 				4968ACE82BECCD8B00F49F65 /* PopupViewController.swift in Sources */,
+				CE5FC7CA2BEF5890004210EB /* GameScene.swift in Sources */,
 				496819042BECABFB0011CDF6 /* Reusable.swift in Sources */,
+				CEC9F6932BF0CA0A00F404B3 /* ChallengesViewController.swift in Sources */,
 				4929F6DD2BEC7169004F62C0 /* SceneDelegate.swift in Sources */,
 				4929F6FE2BECA4D1004F62C0 /* UIView+.swift in Sources */,
+				CE5FC7C62BEF567B004210EB /* GameViewController.swift in Sources */,
 				4929F7012BECA541004F62C0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +468,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +497,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
