@@ -9,20 +9,7 @@ import UIKit
 
 enum PopupType {
     case clearData
-    
-    var title: String {
-        switch self  {
-        case .clearData:
-            return "CLEAR DATA"
-        }
-    }
-    
-    var content: String {
-        switch self {
-        case .clearData:
-            return "Are you sure you want to clear the game data?"
-        }
-    }
+    case fact
 }
 
 final class PopupViewController: UIViewController {
@@ -33,6 +20,9 @@ final class PopupViewController: UIViewController {
     @IBOutlet weak var layerView: UIView!
  
     var screenType: PopupType = .clearData
+    
+    var titleStr: String?
+    var content: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,10 +42,19 @@ final class PopupViewController: UIViewController {
           blurView.widthAnchor.constraint(equalTo: view.widthAnchor)
         ])
         
-        titleLabel.text = screenType.title
-        contentLabel.text = screenType.content.uppercased()
+        titleLabel.text = titleStr ?? ""
+        contentLabel.text = content ?? ""
         primaryButton.applyGradient(colors: [AppColors._29CAFF, AppColors._015AC8])
         secondButton.applyGradient(colors: [AppColors._29CAFF, AppColors._015AC8])
+        
+        switch screenType {
+        case .clearData:
+            break
+        case .fact:
+            primaryButton.isHidden = true
+            secondButton.setTitle("OK", for: .normal)
+        }
+        
     }
     
     override func viewDidLayoutSubviews() {

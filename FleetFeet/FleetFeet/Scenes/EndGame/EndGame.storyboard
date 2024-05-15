@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-ExtraBold.ttf">
+            <string>Gilroy-ExtraBold</string>
+        </array>
+        <array key="Gilroy-RegularItalic.ttf">
+            <string>Gilroy-RegularItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--End Game View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EndGameViewController" id="Y6W-OH-hqX" customClass="EndGameViewController" customModule="FleetFeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="JXk-pQ-OnR">
+                                <rect key="frame" x="71.666666666666686" y="329" width="250" height="194"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb2-HA-Ytb">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pha-Tv-1F7">
+                                                <rect key="frame" x="92.333333333333343" y="8" width="65.333333333333343" height="20"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-RegularItalic" family="Gilroy-RegularItalic" pointSize="20"/>
+                                                <color key="textColor" name="Colors"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c69-pf-7oY">
+                                                <rect key="frame" x="86.333333333333329" y="36" width="76.999999999999986" height="30"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="30"/>
+                                                <color key="textColor" red="0.90196078430000004" green="0.89411764709999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Pha-Tv-1F7" firstAttribute="centerX" secondItem="nb2-HA-Ytb" secondAttribute="centerX" id="5Ug-QS-Wnq"/>
+                                            <constraint firstItem="c69-pf-7oY" firstAttribute="centerX" secondItem="nb2-HA-Ytb" secondAttribute="centerX" id="R1X-ja-TGm"/>
+                                            <constraint firstAttribute="height" constant="62" id="nWu-Ig-KXt"/>
+                                            <constraint firstItem="Pha-Tv-1F7" firstAttribute="top" secondItem="nb2-HA-Ytb" secondAttribute="top" constant="8" id="vFc-6F-r3o"/>
+                                            <constraint firstItem="c69-pf-7oY" firstAttribute="top" secondItem="Pha-Tv-1F7" secondAttribute="bottom" constant="8" id="xhI-6S-m4A"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-iR-r5D">
+                                        <rect key="frame" x="0.0" y="86" width="250" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="999" constant="250" id="blL-gl-YZm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="REPLAY">
+                                            <color key="titleColor" name="Colors"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleReplayButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tLi-4y-EEP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G3-nQ-CrW">
+                                        <rect key="frame" x="0.0" y="152" width="250" height="42"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="MENU">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleMenuButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TiV-Fg-K2G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nb2-HA-Ytb" firstAttribute="width" secondItem="J5s-iR-r5D" secondAttribute="width" id="ot5-bb-QFP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JXk-pQ-OnR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="EVU-ut-xIY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JXk-pQ-OnR" secondAttribute="trailing" constant="32" id="Pem-x7-F6f"/>
+                            <constraint firstItem="JXk-pQ-OnR" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="wZ1-cm-hja"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuButton" destination="3G3-nQ-CrW" id="uOo-zq-2pu"/>
+                        <outlet property="replayButton" destination="J5s-iR-r5D" id="AWI-wF-TLy"/>
+                        <outlet property="scoreView" destination="nb2-HA-Ytb" id="0J4-sC-EDl"/>
+                        <outlet property="scoresLabel" destination="c69-pf-7oY" id="4oE-Nm-Esd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="-6"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Colors">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,9 +35,12 @@
                                 <state key="normal" title="BACK" backgroundImage="ic_common_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="handleBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RoQ-jc-GAr"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-IC-JhD">
-                                <rect key="frame" x="131.66666666666666" y="121" width="129.99999999999997" height="45"/>
+                                <rect key="frame" x="50.666666666666657" y="121" width="292" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhv-Cu-YhM">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="45"/>
@@ -55,12 +58,41 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="4"/>
+                                                <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                 <color key="value" red="0.0039215686274509803" green="0.3529411764705882" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleFactsButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Fic-ak-5eA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOG-p8-Icm">
+                                        <rect key="frame" x="162" y="0.0" width="130" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="Jt5-bQ-xey"/>
+                                            <constraint firstAttribute="height" constant="45" id="neD-Ee-SgO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="SCORES">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0039215686269999999" green="0.35294117650000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleScoreButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KEp-T5-1Pp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -73,6 +105,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YTr-ss-raB">
+                                <rect key="frame" x="0.0" y="182" width="393" height="551"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iiH-kN-ebV">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="551"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GzN-iV-SN0">
+                                        <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="551"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -80,15 +126,27 @@
                             <constraint firstItem="uU9-IX-fcJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="2cx-03-6nK"/>
                             <constraint firstItem="uU9-IX-fcJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6bV-4d-DtV"/>
                             <constraint firstItem="zFt-IC-JhD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9t1-7P-NOZ"/>
+                            <constraint firstItem="YTr-ss-raB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GRN-ll-kgy"/>
                             <constraint firstItem="1xQ-yu-RLk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="I8R-jq-uRh"/>
+                            <constraint firstItem="1Bi-ww-wRb" firstAttribute="top" secondItem="YTr-ss-raB" secondAttribute="bottom" constant="16" id="Mi4-XX-pnU"/>
                             <constraint firstItem="zFt-IC-JhD" firstAttribute="top" secondItem="1xQ-yu-RLk" secondAttribute="bottom" constant="16" id="Oq4-Yz-M0Y"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uU9-IX-fcJ" secondAttribute="trailing" id="PKk-r8-Duj"/>
                             <constraint firstAttribute="bottom" secondItem="uU9-IX-fcJ" secondAttribute="bottom" id="PeZ-ep-e3n"/>
+                            <constraint firstItem="YTr-ss-raB" firstAttribute="top" secondItem="zFt-IC-JhD" secondAttribute="bottom" constant="16" id="TuI-ie-KVI"/>
                             <constraint firstItem="1xQ-yu-RLk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="WBY-qN-NfM"/>
+                            <constraint firstItem="YTr-ss-raB" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" id="jva-NR-RcL"/>
                             <constraint firstItem="1Bi-ww-wRb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wRv-a4-G1g"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1Bi-ww-wRb" secondAttribute="bottom" constant="16" id="x6y-nG-T8l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="challengesTableView" destination="iiH-kN-ebV" id="Pqb-gf-GY2"/>
+                        <outlet property="contentStackView" destination="YTr-ss-raB" id="icQ-1O-ppr"/>
+                        <outlet property="factsButton" destination="dhv-Cu-YhM" id="DJn-zl-0hi"/>
+                        <outlet property="scoreButton" destination="YOG-p8-Icm" id="xyx-CX-BL0"/>
+                        <outlet property="scoresTableView" destination="GzN-iV-SN0" id="rtl-Mw-ocj"/>
+                        <outlet property="titleLabel" destination="1xQ-yu-RLk" id="e4W-wc-Taw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

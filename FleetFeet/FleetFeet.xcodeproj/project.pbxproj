@@ -27,6 +27,13 @@
 		496819092BECBEAB0011CDF6 /* Options.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496819082BECBEAB0011CDF6 /* Options.storyboard */; };
 		4968ACE82BECCD8B00F49F65 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968ACE72BECCD8B00F49F65 /* PopupViewController.swift */; };
 		4968ACEA2BECCD9400F49F65 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4968ACE92BECCD9400F49F65 /* Popup.storyboard */; };
+		49D593372BF44E64007D1C07 /* FactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D593362BF44E64007D1C07 /* FactTableViewCell.xib */; };
+		49D593382BF44E64007D1C07 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D593352BF44E64007D1C07 /* FactTableViewCell.swift */; };
+		49D5933A2BF450B7007D1C07 /* UITalbeView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D593392BF450B7007D1C07 /* UITalbeView+.swift */; };
+		49D5933D2BF45D25007D1C07 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D5933C2BF45D25007D1C07 /* ScoreTableViewCell.xib */; };
+		49D5933E2BF45D25007D1C07 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5933B2BF45D25007D1C07 /* ScoreTableViewCell.swift */; };
+		49EFB5E32BF492B0005DA345 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFB5E22BF492B0005DA345 /* EndGameViewController.swift */; };
+		49EFB5E52BF492B9005DA345 /* EndGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EFB5E42BF492B9005DA345 /* EndGame.storyboard */; };
 		CE5FC7C62BEF567B004210EB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7C52BEF567B004210EB /* GameViewController.swift */; };
 		CE5FC7CA2BEF5890004210EB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7C92BEF5890004210EB /* GameScene.swift */; };
 		CE5FC7CC2BEF5CFC004210EB /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5FC7CB2BEF5CFC004210EB /* Game.storyboard */; };
@@ -58,6 +65,13 @@
 		496819082BECBEAB0011CDF6 /* Options.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Options.storyboard; sourceTree = "<group>"; };
 		4968ACE72BECCD8B00F49F65 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		4968ACE92BECCD9400F49F65 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		49D593352BF44E64007D1C07 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		49D593362BF44E64007D1C07 /* FactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactTableViewCell.xib; sourceTree = "<group>"; };
+		49D593392BF450B7007D1C07 /* UITalbeView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITalbeView+.swift"; sourceTree = "<group>"; };
+		49D5933B2BF45D25007D1C07 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		49D5933C2BF45D25007D1C07 /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
+		49EFB5E22BF492B0005DA345 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		49EFB5E42BF492B9005DA345 /* EndGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndGame.storyboard; sourceTree = "<group>"; };
 		CE5FC7C52BEF567B004210EB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CE5FC7C92BEF5890004210EB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CE5FC7CB2BEF5CFC004210EB /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
@@ -131,6 +145,7 @@
 		4929F6F82BEC9FDE004F62C0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				49EFB5E12BF49292005DA345 /* EndGame */,
 				CEC9F6912BF0C9ED00F404B3 /* Challenges */,
 				CE5FC7C42BEF5672004210EB /* Game */,
 				4968ACE62BECCD6500F49F65 /* Popup */,
@@ -155,6 +170,7 @@
 			children = (
 				4929F6FB2BECA4BD004F62C0 /* UIColor+.swift */,
 				4929F6FD2BECA4D1004F62C0 /* UIView+.swift */,
+				49D593392BF450B7007D1C07 /* UITalbeView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +211,26 @@
 			path = Popup;
 			sourceTree = "<group>";
 		};
+		49D593342BF44E3E007D1C07 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49D593352BF44E64007D1C07 /* FactTableViewCell.swift */,
+				49D593362BF44E64007D1C07 /* FactTableViewCell.xib */,
+				49D5933B2BF45D25007D1C07 /* ScoreTableViewCell.swift */,
+				49D5933C2BF45D25007D1C07 /* ScoreTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		49EFB5E12BF49292005DA345 /* EndGame */ = {
+			isa = PBXGroup;
+			children = (
+				49EFB5E22BF492B0005DA345 /* EndGameViewController.swift */,
+				49EFB5E42BF492B9005DA345 /* EndGame.storyboard */,
+			);
+			path = EndGame;
+			sourceTree = "<group>";
+		};
 		CE5FC7C42BEF5672004210EB /* Game */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +245,7 @@
 		CEC9F6912BF0C9ED00F404B3 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				49D593342BF44E3E007D1C07 /* Cell */,
 				CEC9F6922BF0CA0A00F404B3 /* ChallengesViewController.swift */,
 				CEC9F6942BF0CA1300F404B3 /* Challenges.storyboard */,
 			);
@@ -273,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D5933D2BF45D25007D1C07 /* ScoreTableViewCell.xib in Resources */,
 				4929F6E42BEC716A004F62C0 /* Assets.xcassets in Resources */,
 				496819092BECBEAB0011CDF6 /* Options.storyboard in Resources */,
 				4929F6F42BEC85CE004F62C0 /* Gilroy-SemiBoldItalic.ttf in Resources */,
@@ -280,7 +318,9 @@
 				CE5FC7CF2BEF6698004210EB /* GameScene.sks in Resources */,
 				CEC9F6952BF0CA1300F404B3 /* Challenges.storyboard in Resources */,
 				4929F6F62BEC85CE004F62C0 /* Gilroy-RegularItalic.ttf in Resources */,
+				49D593372BF44E64007D1C07 /* FactTableViewCell.xib in Resources */,
 				4929F6F72BEC85CE004F62C0 /* Gilroy-SemiBold.ttf in Resources */,
+				49EFB5E52BF492B9005DA345 /* EndGame.storyboard in Resources */,
 				4968ACEA2BECCD9400F49F65 /* Popup.storyboard in Resources */,
 				4929F6E72BEC716A004F62C0 /* Base in Resources */,
 				4929F6E22BEC7169004F62C0 /* Base in Resources */,
@@ -298,15 +338,19 @@
 			files = (
 				4929F6DF2BEC7169004F62C0 /* MainViewController.swift in Sources */,
 				4929F6FC2BECA4BD004F62C0 /* UIColor+.swift in Sources */,
+				49D5933E2BF45D25007D1C07 /* ScoreTableViewCell.swift in Sources */,
 				4929F6DB2BEC7169004F62C0 /* AppDelegate.swift in Sources */,
 				496819072BECBEA20011CDF6 /* OptionsViewController.swift in Sources */,
 				496819002BECABA30011CDF6 /* GuideViewController.swift in Sources */,
+				49EFB5E32BF492B0005DA345 /* EndGameViewController.swift in Sources */,
 				4968ACE82BECCD8B00F49F65 /* PopupViewController.swift in Sources */,
 				CE5FC7CA2BEF5890004210EB /* GameScene.swift in Sources */,
 				496819042BECABFB0011CDF6 /* Reusable.swift in Sources */,
 				CEC9F6932BF0CA0A00F404B3 /* ChallengesViewController.swift in Sources */,
+				49D593382BF44E64007D1C07 /* FactTableViewCell.swift in Sources */,
 				4929F6DD2BEC7169004F62C0 /* SceneDelegate.swift in Sources */,
 				4929F6FE2BECA4D1004F62C0 /* UIView+.swift in Sources */,
+				49D5933A2BF450B7007D1C07 /* UITalbeView+.swift in Sources */,
 				CE5FC7C62BEF567B004210EB /* GameViewController.swift in Sources */,
 				4929F7012BECA541004F62C0 /* Constants.swift in Sources */,
 			);

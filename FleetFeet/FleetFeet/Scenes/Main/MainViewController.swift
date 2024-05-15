@@ -30,7 +30,8 @@ final class MainViewController: UIViewController {
             let vc = GuideViewController.instantiate()
             navigationController?.pushViewController(vc, animated: true)
         case 2:
-            print("Challenges")
+            let vc = ChallengesViewController.instantiate()
+            navigationController?.pushViewController(vc, animated: true)
         case 3:
             let vc = OptionsViewController.instantiate()
             navigationController?.pushViewController(vc, animated: true)

@@ -23,8 +23,8 @@ final class OptionsViewController: UIViewController {
     }
     
     private func setupView() {
-        clearDataButton.applyGradient(colors: [AppColors._29CAFF, AppColors._015AC8])
-        shareButton.applyGradient(colors: [AppColors._29CAFF, AppColors._015AC8])
+        clearDataButton.applyGradient(colors: [AppColors.ABE87A, AppColors._16713D])
+        shareButton.applyGradient(colors: [AppColors.ABE87A, AppColors._16713D])
     }
 
     @IBAction func handleIconButton(_ sender: UIButton) {
@@ -35,6 +35,8 @@ final class OptionsViewController: UIViewController {
     
     @IBAction func handleClearDataButton(_ sender: Any) {
         let vc = PopupViewController.instantiate()
+        vc.titleStr = "CLEAR DATA"
+        vc.content = "Are you sure you want to clear the game data?"
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: false)
     }

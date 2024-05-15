@@ -10,23 +10,44 @@ import SpriteKit
 
 final class GameViewController: UIViewController {
     @IBOutlet weak var skView: SKView!
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var heart1: UIImageView!
+    @IBOutlet weak var heart2: UIImageView!
+    @IBOutlet weak var heart3: UIImageView!
+    @IBOutlet weak var heart4: UIImageView!
+    @IBOutlet weak var heart5: UIImageView!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var titleIconImageview: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         setupScene()
+    }
+    
+    private func setupView() {
+        topView.applyGradient(colors: [AppColors.ABE87A, AppColors._16713D])
+    }
+    
+    func updateScore(with score: Int) {
+        
+    }
+    
+    func showEndGame() {
+        let vc = EndGameViewController.instantiate()
+        vc.score = 10
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
     }
     
     private func setupScene() {
         if let scene = SKScene(fileNamed: "GameScene") {
-            // Set the scale mode to scale to fit the window
             scene.scaleMode = .fill
             
-            // Present the scene
             skView.presentScene(scene)
         }
         
         skView.ignoresSiblingOrder = false
-        
         skView.showsFPS = true
         skView.showsNodeCount = true
     }
