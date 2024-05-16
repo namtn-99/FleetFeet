@@ -27,6 +27,18 @@
 		496819092BECBEAB0011CDF6 /* Options.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496819082BECBEAB0011CDF6 /* Options.storyboard */; };
 		4968ACE82BECCD8B00F49F65 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968ACE72BECCD8B00F49F65 /* PopupViewController.swift */; };
 		4968ACEA2BECCD9400F49F65 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4968ACE92BECCD9400F49F65 /* Popup.storyboard */; };
+		497106862BF5A81A005F2CA9 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497106852BF5A81A005F2CA9 /* Storage.swift */; };
+		497106882BF5A826005F2CA9 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497106872BF5A826005F2CA9 /* AppStorage.swift */; };
+		4971068B2BF5B960005F2CA9 /* score.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4971068A2BF5B960005F2CA9 /* score.mp3 */; };
+		497106922BF5B985005F2CA9 /* buttons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4971068D2BF5B985005F2CA9 /* buttons.mp3 */; };
+		497106972BF5B9B7005F2CA9 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497106962BF5B9B7005F2CA9 /* Sounds.swift */; };
+		497106992BF5BC27005F2CA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497106982BF5BC27005F2CA9 /* Utils.swift */; };
+		4971069B2BF5BC3B005F2CA9 /* NSNotification+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971069A2BF5BC3B005F2CA9 /* NSNotification+.swift */; };
+		49866BB32BF609280050CD08 /* arrows.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49866BB22BF609280050CD08 /* arrows.wav */; };
+		49866BB62BF60ACF0050CD08 /* heartLost.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49866BB42BF60ACF0050CD08 /* heartLost.wav */; };
+		49866BB72BF60ACF0050CD08 /* pickUpBall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49866BB52BF60ACF0050CD08 /* pickUpBall.wav */; };
+		49866BB92BF60D110050CD08 /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49866BB82BF60D110050CD08 /* move.wav */; };
+		49866BBB2BF60E0D0050CD08 /* gameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49866BBA2BF60E0D0050CD08 /* gameOver.wav */; };
 		49D593372BF44E64007D1C07 /* FactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D593362BF44E64007D1C07 /* FactTableViewCell.xib */; };
 		49D593382BF44E64007D1C07 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D593352BF44E64007D1C07 /* FactTableViewCell.swift */; };
 		49D5933A2BF450B7007D1C07 /* UITalbeView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D593392BF450B7007D1C07 /* UITalbeView+.swift */; };
@@ -65,6 +77,18 @@
 		496819082BECBEAB0011CDF6 /* Options.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Options.storyboard; sourceTree = "<group>"; };
 		4968ACE72BECCD8B00F49F65 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		4968ACE92BECCD9400F49F65 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		497106852BF5A81A005F2CA9 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		497106872BF5A826005F2CA9 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
+		4971068A2BF5B960005F2CA9 /* score.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = score.mp3; sourceTree = "<group>"; };
+		4971068D2BF5B985005F2CA9 /* buttons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttons.mp3; sourceTree = "<group>"; };
+		497106962BF5B9B7005F2CA9 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		497106982BF5BC27005F2CA9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4971069A2BF5BC3B005F2CA9 /* NSNotification+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+.swift"; sourceTree = "<group>"; };
+		49866BB22BF609280050CD08 /* arrows.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = arrows.wav; sourceTree = "<group>"; };
+		49866BB42BF60ACF0050CD08 /* heartLost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heartLost.wav; sourceTree = "<group>"; };
+		49866BB52BF60ACF0050CD08 /* pickUpBall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickUpBall.wav; sourceTree = "<group>"; };
+		49866BB82BF60D110050CD08 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		49866BBA2BF60E0D0050CD08 /* gameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameOver.wav; sourceTree = "<group>"; };
 		49D593352BF44E64007D1C07 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 		49D593362BF44E64007D1C07 /* FactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactTableViewCell.xib; sourceTree = "<group>"; };
 		49D593392BF450B7007D1C07 /* UITalbeView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITalbeView+.swift"; sourceTree = "<group>"; };
@@ -116,6 +140,7 @@
 				4929F6E82BEC716A004F62C0 /* Info.plist */,
 				4929F6E52BEC716A004F62C0 /* LaunchScreen.storyboard */,
 				4929F6FA2BECA4AD004F62C0 /* Extensions */,
+				497106842BF5A810005F2CA9 /* Utils */,
 				4929F6FF2BECA531004F62C0 /* Helper */,
 				4929F6EE2BEC8442004F62C0 /* Common */,
 				4929F6F82BEC9FDE004F62C0 /* Scenes */,
@@ -126,6 +151,7 @@
 		4929F6EE2BEC8442004F62C0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				497106892BF5B8F7005F2CA9 /* Sounds */,
 				4929F6EF2BEC8457004F62C0 /* Fonts */,
 			);
 			path = Common;
@@ -171,6 +197,7 @@
 				4929F6FB2BECA4BD004F62C0 /* UIColor+.swift */,
 				4929F6FD2BECA4D1004F62C0 /* UIView+.swift */,
 				49D593392BF450B7007D1C07 /* UITalbeView+.swift */,
+				4971069A2BF5BC3B005F2CA9 /* NSNotification+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,6 +236,31 @@
 				4968ACE92BECCD9400F49F65 /* Popup.storyboard */,
 			);
 			path = Popup;
+			sourceTree = "<group>";
+		};
+		497106842BF5A810005F2CA9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				497106962BF5B9B7005F2CA9 /* Sounds.swift */,
+				497106852BF5A81A005F2CA9 /* Storage.swift */,
+				497106872BF5A826005F2CA9 /* AppStorage.swift */,
+				497106982BF5BC27005F2CA9 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		497106892BF5B8F7005F2CA9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				49866BB82BF60D110050CD08 /* move.wav */,
+				49866BB42BF60ACF0050CD08 /* heartLost.wav */,
+				49866BBA2BF60E0D0050CD08 /* gameOver.wav */,
+				49866BB52BF60ACF0050CD08 /* pickUpBall.wav */,
+				49866BB22BF609280050CD08 /* arrows.wav */,
+				4971068D2BF5B985005F2CA9 /* buttons.mp3 */,
+				4971068A2BF5B960005F2CA9 /* score.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		49D593342BF44E3E007D1C07 /* Cell */ = {
@@ -312,17 +364,24 @@
 			files = (
 				49D5933D2BF45D25007D1C07 /* ScoreTableViewCell.xib in Resources */,
 				4929F6E42BEC716A004F62C0 /* Assets.xcassets in Resources */,
+				49866BBB2BF60E0D0050CD08 /* gameOver.wav in Resources */,
 				496819092BECBEAB0011CDF6 /* Options.storyboard in Resources */,
 				4929F6F42BEC85CE004F62C0 /* Gilroy-SemiBoldItalic.ttf in Resources */,
 				4929F6F52BEC85CE004F62C0 /* Gilroy-ExtraBold.ttf in Resources */,
 				CE5FC7CF2BEF6698004210EB /* GameScene.sks in Resources */,
+				49866BB32BF609280050CD08 /* arrows.wav in Resources */,
+				4971068B2BF5B960005F2CA9 /* score.mp3 in Resources */,
 				CEC9F6952BF0CA1300F404B3 /* Challenges.storyboard in Resources */,
 				4929F6F62BEC85CE004F62C0 /* Gilroy-RegularItalic.ttf in Resources */,
 				49D593372BF44E64007D1C07 /* FactTableViewCell.xib in Resources */,
 				4929F6F72BEC85CE004F62C0 /* Gilroy-SemiBold.ttf in Resources */,
 				49EFB5E52BF492B9005DA345 /* EndGame.storyboard in Resources */,
+				49866BB72BF60ACF0050CD08 /* pickUpBall.wav in Resources */,
+				497106922BF5B985005F2CA9 /* buttons.mp3 in Resources */,
+				49866BB92BF60D110050CD08 /* move.wav in Resources */,
 				4968ACEA2BECCD9400F49F65 /* Popup.storyboard in Resources */,
 				4929F6E72BEC716A004F62C0 /* Base in Resources */,
+				49866BB62BF60ACF0050CD08 /* heartLost.wav in Resources */,
 				4929F6E22BEC7169004F62C0 /* Base in Resources */,
 				CE5FC7CC2BEF5CFC004210EB /* Game.storyboard in Resources */,
 				496819022BECABAF0011CDF6 /* Guide.storyboard in Resources */,
@@ -341,15 +400,20 @@
 				49D5933E2BF45D25007D1C07 /* ScoreTableViewCell.swift in Sources */,
 				4929F6DB2BEC7169004F62C0 /* AppDelegate.swift in Sources */,
 				496819072BECBEA20011CDF6 /* OptionsViewController.swift in Sources */,
+				4971069B2BF5BC3B005F2CA9 /* NSNotification+.swift in Sources */,
+				497106862BF5A81A005F2CA9 /* Storage.swift in Sources */,
 				496819002BECABA30011CDF6 /* GuideViewController.swift in Sources */,
+				497106972BF5B9B7005F2CA9 /* Sounds.swift in Sources */,
 				49EFB5E32BF492B0005DA345 /* EndGameViewController.swift in Sources */,
 				4968ACE82BECCD8B00F49F65 /* PopupViewController.swift in Sources */,
 				CE5FC7CA2BEF5890004210EB /* GameScene.swift in Sources */,
 				496819042BECABFB0011CDF6 /* Reusable.swift in Sources */,
 				CEC9F6932BF0CA0A00F404B3 /* ChallengesViewController.swift in Sources */,
 				49D593382BF44E64007D1C07 /* FactTableViewCell.swift in Sources */,
+				497106882BF5A826005F2CA9 /* AppStorage.swift in Sources */,
 				4929F6DD2BEC7169004F62C0 /* SceneDelegate.swift in Sources */,
 				4929F6FE2BECA4D1004F62C0 /* UIView+.swift in Sources */,
+				497106992BF5BC27005F2CA9 /* Utils.swift in Sources */,
 				49D5933A2BF450B7007D1C07 /* UITalbeView+.swift in Sources */,
 				CE5FC7C62BEF567B004210EB /* GameViewController.swift in Sources */,
 				4929F7012BECA541004F62C0 /* Constants.swift in Sources */,
@@ -510,8 +574,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,8 +603,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

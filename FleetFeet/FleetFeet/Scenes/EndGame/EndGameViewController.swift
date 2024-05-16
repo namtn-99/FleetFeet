@@ -40,11 +40,22 @@ final class EndGameViewController: UIViewController {
     }
 
     @IBAction func handleReplayButton(_ sender: Any) {
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
+        
+        NotificationCenter.default.post(name: .replay, object: nil)
+        dismiss(animated: true)
     }
     
     
     @IBAction func handleMenuButton(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
+        
+        let nav = UINavigationController(rootViewController: MainViewController.instantiate())
+        Utils.swapRootViewController(nav)
     }
 }
 

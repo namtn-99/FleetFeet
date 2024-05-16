@@ -10,11 +10,13 @@ import UIKit
 struct FactModel {
     let title: String
     let content: String
+    var isDone: Bool = false
 }
 
 struct User: Codable {
     let name: String
     let score: Int
+    var isUser: Bool = false
 }
 
 final class ChallengesViewController: UIViewController {
@@ -53,6 +55,27 @@ final class ChallengesViewController: UIViewController {
     private func setupView() {
         factsButton.applyGradient(colors: [AppColors._29CAFF, AppColors._015AC8])
         scoreButton.applyGradient(colors: [AppColors._29CAFF, AppColors._015AC8])
+        
+        facts[0].isDone = AppStorage.scores > 76
+        facts[1].isDone = AppStorage.playCount > 10
+        facts[3].isDone = AppStorage.scores > 154
+        facts[4].isDone = AppStorage.isShared
+        facts[5].isDone = AppStorage.scores > 1345
+        
+        if let date = AppStorage.comDate {
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.day], from: date, to: Date())
+            if let differenceInDays = components.day,
+                differenceInDays >= 3 {
+                facts[2].isDone = true
+            }
+        }
+        
+        let user = User(name: "YOU", score: AppStorage.scores, isUser: true)
+        users.append(user)
+        users.sort(by: { user1, user2 in
+            user1.score > user2.score
+        })
     }
     
     private func setupTableView() {
@@ -79,11 +102,19 @@ final class ChallengesViewController: UIViewController {
     
     
     @IBAction func handleFactsButton(_ sender: Any) {
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
+        
         scoresTableView.isHidden = true
         challengesTableView.isHidden = false
     }
     
     @IBAction func handleScoreButton(_ sender: Any) {
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
+        
         scoresTableView.isHidden = false
         challengesTableView.isHidden = true
     }
@@ -106,7 +137,7 @@ extension ChallengesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == challengesTableView {
             let cell = tableView.dequeueReusableCell(for: indexPath, cellType: FactTableViewCell.self)
-            cell.configCell(title: facts[indexPath.row].title.uppercased())
+            cell.configCell(title: facts[indexPath.row].title.uppercased(), isDone: facts[indexPath.row].isDone)
             
             cell.didSelected = { [weak self] in
                 guard let self = self else { return }
@@ -116,7 +147,8 @@ extension ChallengesViewController: UITableViewDataSource {
         }
         
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: ScoreTableViewCell.self)
-        cell.configCell(index: indexPath.row + 1, title: users[indexPath.row].name, score: users[indexPath.row].score)
+        let user = users[indexPath.row]
+        cell.configCell(index: indexPath.row + 1, title: user.name, score: user.score, isUser: user.isUser)
         return cell
         
     }

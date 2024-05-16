@@ -62,7 +62,17 @@ final class PopupViewController: UIViewController {
         layerView.applyGradient(colors: [AppColors.ABE87A, AppColors._16713D])
     }
     
+    @IBAction func handlePrimaryButton(_ sender: Any) {
+        if screenType == .clearData {
+            AppStorage.clearData()
+        }
+        dismiss(animated: false)
+    }
     @IBAction func handleSecondButton(_ sender: Any) {
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
+        
         dismiss(animated: false)
     }
     

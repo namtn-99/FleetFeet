@@ -47,6 +47,10 @@ final class GuideViewController: UIViewController {
     }
     
     @IBAction func handlePreviousButton(_ sender: UIButton) {
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
+        
         if currentGuide > 0 {
             currentGuide -= 1
             print(currentGuide)
@@ -57,6 +61,10 @@ final class GuideViewController: UIViewController {
     }
     
     @IBAction func handleNextButton(_ sender: UIButton) {
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
+        
         if currentGuide < 2 {
             currentGuide += 1
             print(currentGuide)
@@ -67,6 +75,9 @@ final class GuideViewController: UIViewController {
     }
     
     @IBAction func handleBackButton(_ sender: UIButton) {
+        if AppStorage.isOnMusic {
+            playSound(with: "buttons")
+        }
         navigationController?.popViewController(animated: true)
     }
 }

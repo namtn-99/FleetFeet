@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3g1-RE-HGK">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +19,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="FleetFeet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="FleetFeet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,29 +83,29 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWc-Cq-mLV">
                                 <rect key="frame" x="47.333333333333343" y="135" width="298.66666666666663" height="62"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_title1" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-nO-ZqO">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_title1" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-nO-ZqO">
                                         <rect key="frame" x="8" y="8" width="46" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Rc3-nO-ZqO" secondAttribute="height" multiplier="1:1" id="4nU-Bh-79p"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5lp-Na-cUt">
-                                        <rect key="frame" x="61.999999999999993" y="8" width="93.333333333333314" height="46"/>
+                                        <rect key="frame" x="62" y="8" width="101" height="46"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER_12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="877-Xc-C9T">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="15.333333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="15.333333333333334"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACTS: 55" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9F-uQ-X7z">
-                                                <rect key="frame" x="0.0" y="15.333333333333343" width="93.333333333333329" height="15.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="15.333333333333343" width="101" height="15.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE: 135" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb1-cy-YkT">
-                                                <rect key="frame" x="0.0" y="30.666666666666654" width="93.333333333333329" height="15.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="30.666666666666654" width="101" height="15.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -112,16 +113,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gD4-as-jt2">
-                                        <rect key="frame" x="241.33333333333334" y="16" width="41.333333333333343" height="30"/>
+                                        <rect key="frame" x="239.99999999999997" y="15" width="42.666666666666657" height="32"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RATING" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-oF-hbw">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="12"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="14"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYA-ad-fEy">
-                                                <rect key="frame" x="0.0" y="16" width="41.333333333333336" height="14"/>
+                                                <rect key="frame" x="0.0" y="18" width="42.666666666666664" height="14"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -165,7 +166,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="yVH-47-f5i"/>
                     <connections>
+                        <outlet property="factsLabel" destination="t9F-uQ-X7z" id="5mS-na-lru"/>
+                        <outlet property="highScoreLabel" destination="Yb1-cy-YkT" id="Sl2-yf-PVH"/>
+                        <outlet property="iconImageView" destination="Rc3-nO-ZqO" id="Pu7-1z-apC"/>
+                        <outlet property="ratingLabel" destination="oYA-ad-fEy" id="EmX-2t-Kog"/>
                         <outlet property="topView" destination="QWc-Cq-mLV" id="hgN-SF-WG6"/>
+                        <outlet property="usernameLabel" destination="877-Xc-C9T" id="9P5-ZZ-cfE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

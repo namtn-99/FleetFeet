@@ -26,10 +26,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="JXk-pQ-OnR">
-                                <rect key="frame" x="71.666666666666686" y="329" width="250" height="194"/>
+                                <rect key="frame" x="71.666666666666686" y="319" width="250" height="214"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb2-HA-Ytb">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="62"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="82"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pha-Tv-1F7">
                                                 <rect key="frame" x="92.333333333333343" y="8" width="65.333333333333343" height="20"/>
@@ -48,13 +48,18 @@
                                         <constraints>
                                             <constraint firstItem="Pha-Tv-1F7" firstAttribute="centerX" secondItem="nb2-HA-Ytb" secondAttribute="centerX" id="5Ug-QS-Wnq"/>
                                             <constraint firstItem="c69-pf-7oY" firstAttribute="centerX" secondItem="nb2-HA-Ytb" secondAttribute="centerX" id="R1X-ja-TGm"/>
-                                            <constraint firstAttribute="height" constant="62" id="nWu-Ig-KXt"/>
+                                            <constraint firstAttribute="height" constant="82" id="nWu-Ig-KXt"/>
                                             <constraint firstItem="Pha-Tv-1F7" firstAttribute="top" secondItem="nb2-HA-Ytb" secondAttribute="top" constant="8" id="vFc-6F-r3o"/>
                                             <constraint firstItem="c69-pf-7oY" firstAttribute="top" secondItem="Pha-Tv-1F7" secondAttribute="bottom" constant="8" id="xhI-6S-m4A"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-iR-r5D">
-                                        <rect key="frame" x="0.0" y="86" width="250" height="42"/>
+                                        <rect key="frame" x="0.0" y="106" width="250" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" priority="999" constant="250" id="blL-gl-YZm"/>
                                         </constraints>
@@ -73,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G3-nQ-CrW">
-                                        <rect key="frame" x="0.0" y="152" width="250" height="42"/>
+                                        <rect key="frame" x="0.0" y="172" width="250" height="42"/>
                                         <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy-ExtraBold" pointSize="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="MENU">

@@ -14,7 +14,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        updateFacts()
         return true
+    }
+    
+    private func updateFacts() {
+        AppStorage.factsUnlock = 0
+        if AppStorage.scores > 76 {
+            AppStorage.factsUnlock += 1
+        }
+        if AppStorage.playCount > 10 {
+            AppStorage.factsUnlock += 1
+        }
+        if AppStorage.scores > 154 {
+            AppStorage.factsUnlock += 1
+        }
+        if AppStorage.isShared {
+            AppStorage.factsUnlock += 1
+        }
+        if AppStorage.scores > 1345 {
+            AppStorage.factsUnlock += 1
+        }
+        
+        if let date = AppStorage.comDate {
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.day], from: date, to: Date())
+            if let differenceInDays = components.day,
+                differenceInDays >= 3 {
+                AppStorage.factsUnlock += 1
+            }
+        }
     }
 
     // MARK: UISceneSession Lifecycle

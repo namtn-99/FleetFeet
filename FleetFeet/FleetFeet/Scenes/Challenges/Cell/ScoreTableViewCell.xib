@@ -20,28 +20,39 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhY-vY-UwT">
                         <rect key="frame" x="92" y="25" width="280" height="45"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1N-yO-5rM">
-                                <rect key="frame" x="16" y="10.666666666666664" width="50" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b4f-R7-HTw">
+                                <rect key="frame" x="16" y="10.666666666666664" width="81" height="24"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="owJ-5Y-i6s">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="fOa-hB-snf"/>
+                                            <constraint firstAttribute="height" constant="24" id="hQH-Wr-ryW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1N-yO-5rM">
+                                        <rect key="frame" x="32" y="0.0" width="49" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2B-tP-wMQ">
-                                <rect key="frame" x="74" y="10.666666666666664" width="190" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="215" y="10.999999999999998" width="49" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="L1N-yO-5rM" firstAttribute="centerY" secondItem="YhY-vY-UwT" secondAttribute="centerY" id="4PW-hG-N9L"/>
                             <constraint firstAttribute="height" constant="45" id="60T-0D-vzJ"/>
-                            <constraint firstItem="H2B-tP-wMQ" firstAttribute="leading" secondItem="L1N-yO-5rM" secondAttribute="trailing" constant="8" id="S4H-Ce-PrE"/>
-                            <constraint firstItem="L1N-yO-5rM" firstAttribute="leading" secondItem="YhY-vY-UwT" secondAttribute="leading" constant="16" id="UQ4-oh-LFj"/>
+                            <constraint firstItem="b4f-R7-HTw" firstAttribute="centerY" secondItem="YhY-vY-UwT" secondAttribute="centerY" id="RwQ-53-Klm"/>
                             <constraint firstAttribute="width" priority="750" constant="280" id="ba6-Tz-cVh"/>
                             <constraint firstItem="H2B-tP-wMQ" firstAttribute="centerY" secondItem="YhY-vY-UwT" secondAttribute="centerY" id="kVp-PG-a67"/>
                             <constraint firstAttribute="trailing" secondItem="H2B-tP-wMQ" secondAttribute="trailing" constant="16" id="rkJ-Fb-Z5m"/>
+                            <constraint firstItem="b4f-R7-HTw" firstAttribute="leading" secondItem="YhY-vY-UwT" secondAttribute="leading" constant="16" id="vCe-q8-EyC"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -60,6 +71,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="iconImageView" destination="owJ-5Y-i6s" id="MUc-hY-dab"/>
                 <outlet property="layerView" destination="YhY-vY-UwT" id="Lku-z9-9SE"/>
                 <outlet property="scoreLabel" destination="H2B-tP-wMQ" id="FvH-yW-9NZ"/>
                 <outlet property="titleLabel" destination="L1N-yO-5rM" id="Yfk-6W-MN9"/>
