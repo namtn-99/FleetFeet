@@ -96,6 +96,7 @@ class GameScene: SKScene {
     var red7Position = CGPoint(x: 950, y: -50)
     var red8Position = CGPoint(x: 950, y: 300)
     var isStop = false
+    var isShowScore = true
     
     var ballState = 0
     var heart = 5
@@ -169,6 +170,7 @@ class GameScene: SKScene {
     }
     
     @objc func replay() {
+        isShowScore = true
         resetGame()
     }
     
@@ -178,7 +180,7 @@ class GameScene: SKScene {
     }
     
     private func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
     }
     
     @objc func timerAction() {
@@ -306,14 +308,16 @@ class GameScene: SKScene {
         if actor.position.x < -200 {
             actor.position.x = -200
         }
-        if actor.position.x > 250, ballState == 0 {
+        if actor.position.x > 250, ballState == 0, isShowScore {
             AppStorage.scores += 1
             
             if AppStorage.isOnMusic {
                 actor.run(gameOverSound)
             }
+            gameDelegate?.updateScore()
             gameDelegate?.gameOver()
             isStop = false
+            isShowScore = false
         }
         
         if ballState == 0 {

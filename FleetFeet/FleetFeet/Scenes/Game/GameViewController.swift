@@ -39,6 +39,7 @@ final class GameViewController: UIViewController {
                                                selector: #selector(updateIcon),
                                                name: .updateIcon,
                                                object: nil)
+        scoreLabel.text = String(describing: AppStorage.scores)
     }
     
     @objc func updateIcon() {
